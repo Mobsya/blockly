@@ -550,7 +550,7 @@
 	"THYMIO_ARITHMETIC_TOOLTIP": "Calcola l'espressione aritmetica",
 	"THYMIO_BINARY_HELPURL": "https://www.thymio.org/it:thymiotutorielp2",
 	"THYMIO_BINARY_TOOLTIP": "Esegui l'operazione binaria",
-	"THYMIO_BINARY": "%2 binary %1 %3",
+	"THYMIO_BINARY": "%2 %1 %3",
 	"THYMIO_BINARY_LEFT_SHIFT": "scorrimento a sinistra",
 	"THYMIO_BINARY_RIGHT_SHIFT": "scorrimento a destra",
 	"THYMIO_BINARY_AND": "and logico",
