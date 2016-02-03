@@ -307,7 +307,7 @@
 	"PROCEDURES_IFRETURN_TOOLTIP": "Se un valore è vero allora restituisce un secondo valore.",
 	"PROCEDURES_IFRETURN_WARNING": "Attenzioneː Questo blocco può essere usato solo all'interno di una definizione di funzione.",
 	"THYMIO_WHEN_HELPURL": "https://www.thymio.org/it:thymiotutorielp2",
-	"THYMIO_WHEN_TOOLTIP": "Verifica li cambiamento di una condizione",
+	"THYMIO_WHEN_TOOLTIP": "Verifica il cambiamento di una condizione",
 	"THYMIO_WHEN_WHEN": "quando",
 	"THYMIO_WHEN_DO": "fare",
 	"THYMIO_FOR_HELPURL": "https://www.thymio.org/it:thymiotutorielp2",
