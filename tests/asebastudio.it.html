@@ -5,7 +5,7 @@
 <title>Interfaccia Thymio-Blockly</title>
 <script src="qrc:/plugins/ThymioBlockly/blockly/blockly_compressed.js"></script>
 <script src="qrc:/plugins/ThymioBlockly/blockly/blocks_compressed.js"></script>
-<script src="qrc:/plugins/ThymioBlockly/blockly/msg/js/i.js"></script>
+<script src="qrc:/plugins/ThymioBlockly/blockly/msg/js/it.js"></script>
 <script src="qrc:/plugins/ThymioBlockly/blockly/aesl_compressed.js"></script>
 <script src="qrc:/plugins/ThymioBlockly/blockly/overrides_compressed.js"></script>
 <script>
@@ -100,7 +100,7 @@ h1 {
   <div id="blocklyDiv"></div>
 
   <xml id="toolbox" style="display: none">
-    <category name="Événements" colour="10">
+    <category name="Eventi" colour="10">
       <block type="thymio_event_button"></block>
       <block type="thymio_event_prox"></block>
       <block type="thymio_event_prox_ground"></block>
@@ -151,7 +151,7 @@ h1 {
         <field name="EVENT">prox</field>
       </block>
     </category>
-    <category name="Actioneurs" colour="60">
+    <category name="Attuatori" colour="60">
       <block type="thymio_motors_stop"></block>
       <block type="thymio_motors_start">
         <value name="SPEED">
@@ -206,7 +206,7 @@ h1 {
         </value>
       </block>
     </category>
-    <category name="LEDs" colour="160">
+    <category name="LED" colour="160">
       <block type="thymio_led_off"></block>
       <block type="thymio_led"></block>
       <block type="thymio_led_rgb">
@@ -364,7 +364,7 @@ h1 {
         </value>
       </block>
     </category>
-    <category name="Capteurs" colour="230">
+    <category name="Sensori" colour="230">
       <block type="thymio_button_pressed"></block>
       <block type="thymio_prox_check"></block>
       <block type="thymio_prox_ground_check"></block>
@@ -389,7 +389,7 @@ h1 {
       </block>
     </category>
     <sep></sep>
-    <category name="Logique" colour="210">
+    <category name="Logica di controllo" colour="210">
       <block type="controls_if">
         <value name="IF0">
           <shadow type="logic_boolean">
@@ -437,7 +437,7 @@ h1 {
       </block>
       <block type="logic_boolean"></block>
     </category>
-    <category name="Boucle" colour="120">
+    <category name="Iterazioni" colour="120">
       <block type="controls_repeat">
         <field name="TIMES">10</field>
       </block>
@@ -453,7 +453,7 @@ h1 {
         <field name="TO">9</field>
       </block>
     </category>
-    <category name="Math" colour="230">
+    <category name="Matematica" colour="230">
       <block type="math_number"></block>
       <block type="thymio_arithmetic">
         <value name="A">
