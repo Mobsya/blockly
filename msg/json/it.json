@@ -560,7 +560,7 @@
 	"THYMIO_UNARY_TOOLTIP": "Applica un operatore unario",
 	"THYMIO_UNNARY": "%1 di %2",
 	"THYMIO_UNNARY_NEGATIVE": "negativo",
-	"THYMIO_UNNARY_ABSOLUTE": "absoluto",
+	"THYMIO_UNNARY_ABSOLUTE": "valore assoluto",
 	"THYMIO_UNNARY_BINARY_NOT": "complemento logico not",
 	"THYMIO_COMMUNICATION_HELPURL": "https://www.thymio.org/it:thymiotutorielp2",
 	"THYMIO_COMMUNICATION_TOOLTIP": "Controlla la funzionalità di comunicazione del robot",
