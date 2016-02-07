@@ -399,7 +399,7 @@
 	"THYMIO_LED_PROX_GROUND": "imposta i LED dei sensori di prossimità inferiori: sinistro: %1 destro: %2",
 	"THYMIO_LED_BUTTON_HELPURL": "https://www.thymio.org/it:thymiotutorielp2",
 	"THYMIO_LED_BUTTON_TOOLTIP": "Imposta la luminosità dei LED dei bottoni",
-	"THYMIO_LED_BUTTON": "imposta i LED dei bottoni: avanti: %1, destra: %2, indietro: %3 sinistra: %4",
+	"THYMIO_LED_BUTTON": "imposta i LED dei bottoni: avanti: %1 destra: %2 indietro: %3 sinistra: %4",
 	"THYMIO_LED_TEMPERATURE_HELPURL": "https://www.thymio.org/it:thymiotutorielp2",
 	"THYMIO_LED_TEMPERATURE_TOOLTIP": "Imposta la luminosità dei LED del sensore di temperatura",
 	"THYMIO_LED_TEMPERATURE": "imposta i LED del sensore di temperatura a rosso: %1 blu: %2",
