@@ -433,7 +433,7 @@
 	"THYMIO_SOUND_SYSTEM_TARGET_FRIENDLY": "di obiettivo ok, per comportamento amichevole",
 	"THYMIO_SOUND_SYSTEM_TARGET_DETECTED": "di obiettivo riconosciuto, per comportamento amichevole",
 	"THYMIO_SOUND_NOTE_HELPURL": "https://www.thymio.org/it:thymiotutorielp2",
-	"THYMIO_SOUND_NOTE_TOOLTIP": "Esegue una nota di una certa frequenza per una certa durata",
+	"THYMIO_SOUND_NOTE_TOOLTIP": "Esegue una nota di una certa frequenza espressa in Hertz per una certa durata espressa in sessantesimi di secondo",
 	"THYMIO_SOUND_NOTE": "esegui una nota da %1 Hz per %2 / 60 secondi",
 	"THYMIO_SOUND_STOP_HELPURL": "https://www.thymio.org/it:thymiotutorielp2",
 	"THYMIO_SOUND_STOP_TOOLTIP": "Interrompe l'esecuzione del suono",
