@@ -155,7 +155,7 @@
 	"MATH_ONLIST_OPERATOR_STD_DEV": "desviación estándar de la lista",
 	"MATH_ONLIST_TOOLTIP_STD_DEV": "Devuelve la desviación estándar de los valores numéricos en la lista.",
 	"MATH_ONLIST_OPERATOR_RANDOM": "elemento aleatorio de la lista",
-	"MATH_ONLIST_TOOLTIP_RANDOM": "Devuelve un elemento aleatorio de la lista.",
+	"MATH_ONLIST_TOOLTIP_RANDOM": "Devuelve un elemento al azár de la lista.",
 	"MATH_MODULO_HELPURL": "https://en.wikipedia.org/wiki/Modulo_operation",
 	"MATH_MODULO_TITLE": "resto de %1 ÷ %2",
 	"MATH_MODULO_TOOLTIP": "Devuelve el resto al dividir los dos números.",
