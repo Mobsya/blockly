@@ -130,6 +130,8 @@ function run()
 		code +
 		'</node>' +
 		'</network>';		
+
+	document.getElementById('importExport').value = aesl;
 	
 	var payload = 'file=' + aesl;
 	
@@ -575,7 +577,7 @@ h1 {
 
 <category colour="160" name="Libraries">
     <category name="Math-I">
-  <block type="math_min">
+  <block type="math_min_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -592,7 +594,7 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_max">
+  <block type="math_max_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -609,29 +611,7 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_clamp">
-    <value name="A">
-      <shadow type="thymio_variable_get">
-        <field name="VAR">value</field>
-      </shadow>
-    </value>
-    <value name="B">
-      <shadow type="math_number">
-        <field name="NUM">0</field>
-      </shadow>
-    </value>
-    <value name="C">
-      <shadow type="math_number">
-        <field name="NUM">0</field>
-      </shadow>
-    </value>
-    <value name="D">
-      <shadow type="math_number">
-        <field name="NUM">1</field>
-      </shadow>
-    </value>
-  </block>
-  <block type="math_muldiv">
+  <block type="math_clamp_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -653,7 +633,29 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_sin">
+  <block type="math_muldiv_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="D">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_sin_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -665,7 +667,7 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_cos">
+  <block type="math_cos_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -677,7 +679,7 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_atan2">
+  <block type="math_atan2_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -694,7 +696,7 @@ h1 {
       </block>
     </value>
   </block>
-  <block type="math_sqrt">
+  <block type="math_sqrt_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -706,7 +708,7 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_rand">
+  <block type="math_rand_easy">
     <value name="v">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -716,10 +718,12 @@ h1 {
     </category>
 
 
-
-
-    
     <category name="Math-II">
+  <block type="thymio_sensor_arrays"></block>
+
+  <block type="array_literal"></block>
+
+
   <block type="math_stat">
     <value name="V">
       <shadow type="thymio_variable_get">
@@ -742,6 +746,7 @@ h1 {
       </shadow>
     </value>
   </block>
+
   <block type="math_argbounds">
     <value name="A">
       <shadow type="thymio_variable_get">
@@ -759,7 +764,8 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_copy">
+
+  <block type="math_copy_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
@@ -771,14 +777,16 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_sort">
+
+  <block type="math_sort_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
       </shadow>
     </value>
   </block>
-  <block type="math_fill">
+
+  <block type="math_fill_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
@@ -790,7 +798,8 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_rot2">
+
+  <block type="math_rot2_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
@@ -807,7 +816,8 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_addscalar">
+
+  <block type="math_addscalar_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
@@ -824,7 +834,8 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_add">
+
+  <block type="math_add_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
@@ -841,7 +852,8 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_sub">
+
+  <block type="math_sub_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
@@ -858,7 +870,8 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_mul">
+
+  <block type="math_mul_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
@@ -875,7 +888,8 @@ h1 {
       </shadow>
     </value>
   </shadow>
-  <shadow type="math_div">
+
+  <shadow type="math_div_easy">
     <value name="A">
       <shadow type="thymio_variable_get">
         <field name="VAR">A</field>
@@ -892,7 +906,8 @@ h1 {
       </shadow>
     </value>
   </block>
-  <block type="math_dot">
+
+  <block type="math_dot_easy">
     <value name="r">
       <shadow type="thymio_variable_get">
         <field name="VAR">value</field>
@@ -908,13 +923,10 @@ h1 {
         <field name="VAR">B</field>
       </shadow>
     </value>
-    <value name="n">
-      <shadow type="math_number">
-        <field name="NUM">8</field>
-      </shadow>
-    </value>
   </block>
-</category>
+    </category>
+
+    
 
 
     <category name="SDSound">

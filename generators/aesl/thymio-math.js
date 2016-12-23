@@ -1,3 +1,48 @@
+Blockly.AESL['array_partof'] = function(block) {
+  var variable_var = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('VAR'), Blockly.Variables.NAME_TYPE);
+  var text_from = block.getFieldValue('FROM');
+  var text_to = block.getFieldValue('TO');
+
+  var code = variable_var+'['+text_from+':'+text_to+']';
+
+  return [code, Blockly.AESL.ORDER_ATOMIC];
+};
+
+
+
+Blockly.AESL['array_const'] = function(block) {
+  var text_arraydef = block.getFieldValue('ARRAYDEF');
+
+  var code = '['+text_arraydef+']';
+
+  return [code, Blockly.AESL.ORDER_ATOMIC];
+};
+
+
+Blockly.AESL['sensor_arrays'] = function(block) {
+  var dropdown_which = block.getFieldValue('WHICH');
+  var code="";
+
+  switch(dropdown_which){
+    case 'BACK':
+       code="prox.horizontal[5:6]";
+       break;
+    case 'FRONT':
+       code="prox.horizontal[0:4]";
+       break;
+    case 'BOTTOM':
+       code="prox.ground.delta";
+       break;
+    case 'ACC':
+       code="acc";
+       break;
+  }
+  
+  return [code, Blockly.AESL.ORDER_ATOMIC];
+};
+
+
+
 Blockly.AESL['math_copy'] = function(block) {
 
   var A = Blockly.AESL.valueToCode(block, 'A', Blockly.AESL.ORDER_ATOMIC);

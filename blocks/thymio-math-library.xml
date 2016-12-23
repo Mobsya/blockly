@@ -1,0 +1,181 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="=wO5c)@y0;:aSDnwL,?s" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">math_fill</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="g8kRL;z;0w7K[z,k?2hs">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="vzb{mN7oGvm%=k(dX;rJ">
+            <field name="TEXT">math.fill (</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id=")4`W]IN~uB{.DYZDKz_%">
+            <field name="INPUTNAME">ddd</field>
+            <field name="ALIGN">RIGHT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="#B)=$~7DHIZ4mb[B^fb0">
+                <field name="TEXT">v:</field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="?UZ9Bd*{2|jm^$R9!|XC"></shadow>
+              <block type="type_list" id="BKJH%/aIXW;A@%s%_YUC"></block>
+            </value>
+            <next>
+              <block type="input_dummy" id="qc1S1OHhj,7Zy/aqJY6B">
+                <field name="ALIGN">LEFT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="CFJM{W1c_nPKI6d@H_2A">
+                    <field name="TEXT"> , </field>
+                  </block>
+                </statement>
+                <next>
+                  <block type="input_value" id="ilE^{p]z4a;[cKJL}QY,">
+                    <field name="INPUTNAME">value</field>
+                    <field name="ALIGN">RIGHT</field>
+                    <statement name="FIELDS">
+                      <block type="field_static" id="hH}a(Qh7]DMAx!6ucw_E">
+                        <field name="TEXT">s:</field>
+                      </block>
+                    </statement>
+                    <value name="TYPE">
+                      <shadow type="type_null" id="%3hy+Bd2)ac6NUf)$kQm"></shadow>
+                      <block type="type_number" id="+B0S3jh0_[EgW{tSK]yG"></block>
+                    </value>
+                    <next>
+                      <block type="input_dummy" id="!yV]rWo:#Vc9Gct[I/`$">
+                        <field name="ALIGN">LEFT</field>
+                        <statement name="FIELDS">
+                          <block type="field_static" id="iaZ.1!X3eT.IP.pnCGn6">
+                            <field name="TEXT">)</field>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="GE4hdoYywV%F@oXFt{As"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="xvYg)0Uyp?2$}U-K/=-/"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="b58uR,K8@gk1+Kpy(x$^">
+        <mutation colour="#9fa55b"></mutation>
+        <field name="HUE">65</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="=wO5c)@y0;:aSDnwL,?s" deletable="false" movable="false" x="0" y="0">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">math_dot</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="g8kRL;z;0w7K[z,k?2hs">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="vzb{mN7oGvm%=k(dX;rJ">
+            <field name="TEXT">math.dot</field>
+          </block>
+        </statement>
+        <next>
+          <block type="input_value" id=")4`W]IN~uB{.DYZDKz_%">
+            <field name="INPUTNAME">ddd</field>
+            <field name="ALIGN">RIGHT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="#B)=$~7DHIZ4mb[B^fb0">
+                <field name="TEXT"></field>
+              </block>
+            </statement>
+            <value name="TYPE">
+              <shadow type="type_null" id="?UZ9Bd*{2|jm^$R9!|XC"></shadow>
+              <block type="type_number" id="xS{u3#oqDY2FwZa]ZM3-"></block>
+            </value>
+            <next>
+              <block type="input_value" id="XLkeN4r%G43^udx%v*x^">
+                <field name="INPUTNAME">vvv</field>
+                <field name="ALIGN">RIGHT</field>
+                <statement name="FIELDS">
+                  <block type="field_static" id="-esYYQ/[a_C*%jt,9,?!">
+                    <field name="TEXT"></field>
+                  </block>
+                </statement>
+                <value name="TYPE">
+                  <shadow type="type_null" id="n`^KKzwN^l?H/:mkur5p"></shadow>
+                  <block type="type_group" id="Ov;fi{qyBS`IA.P|B|Kx">
+                    <mutation types="2"></mutation>
+                    <value name="TYPE0">
+                      <block type="type_list" id="?WC4j+AiIBm[d^n(-~GI"></block>
+                    </value>
+                    <value name="TYPE1">
+                      <block type="type_number" id="+PL3C0ZhxnN@Fh^[wx]D"></block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="input_value" id="C5f7G]uj$)zrIX8r)P8j">
+                    <field name="INPUTNAME">ddd</field>
+                    <field name="ALIGN">RIGHT</field>
+                    <statement name="FIELDS">
+                      <block type="field_static" id=",v.RwI~$s8+d!+i(DuG3">
+                        <field name="TEXT"></field>
+                      </block>
+                    </statement>
+                    <value name="TYPE">
+                      <shadow type="type_null" id="?UZ9Bd*{2|jm^$R9!|XC"></shadow>
+                      <block type="type_group" id="o-yo(gPV1yP?sb#aG{I^">
+                        <mutation types="2"></mutation>
+                        <value name="TYPE0">
+                          <block type="type_list" id="[,+t,M%:,-,ThSY2k2c}"></block>
+                        </value>
+                        <value name="TYPE1">
+                          <block type="type_number" id="g!=@`6?Zi/tgwIM[ZB_8"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="input_value" id="T1.e*)9D9r|GwtGlKciz">
+                        <field name="INPUTNAME">ddd</field>
+                        <field name="ALIGN">RIGHT</field>
+                        <statement name="FIELDS">
+                          <block type="field_static" id="wc@*!AY64SjA2%ObCnJl">
+                            <field name="TEXT"></field>
+                          </block>
+                        </statement>
+                        <value name="TYPE">
+                          <shadow type="type_null" id="?UZ9Bd*{2|jm^$R9!|XC"></shadow>
+                          <block type="type_number" id="}4!vc%2-;Ma[_rPm9#]y"></block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="Cx^eUngeKjcLJA!M6cxu"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="Hf:$^T);~YSM9Q:P216D"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="b58uR,K8@gk1+Kpy(x$^">
+        <mutation colour="#9fa55b"></mutation>
+        <field name="HUE">65</field>
+      </block>
+    </value>
+  </block></xml>

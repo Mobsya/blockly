@@ -1,0 +1,208 @@
+Blockly.JavaScript['math_fill'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'c', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_dot'] = function(block) {
+  var variable_r = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('r'), Blockly.Variables.NAME_TYPE);
+  var value_a = Blockly.JavaScript.valueToCode(block, 'A', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_n = Blockly.JavaScript.valueToCode(block, 'n', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_min'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'C', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_copy'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_addscalar'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'c', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_add'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'C', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_sub'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'C', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_mul'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'C', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_div'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'C', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_max'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'C', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_clamp'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'C', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_d = Blockly.JavaScript.valueToCode(block, 'D', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_stat'] = function(block) {
+  var value_a = Blockly.JavaScript.valueToCode(block, 'A', Blockly.JavaScript.ORDER_ATOMIC);
+  var variable_min = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('min'), Blockly.Variables.NAME_TYPE);
+  var variable_max = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('max'), Blockly.Variables.NAME_TYPE);
+  var variable_mean = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('mean'), Blockly.Variables.NAME_TYPE);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_argbounds'] = function(block) {
+  var value_a = Blockly.JavaScript.valueToCode(block, 'A', Blockly.JavaScript.ORDER_ATOMIC);
+  var variable_argmin = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('argmin'), Blockly.Variables.NAME_TYPE);
+  var variable_argmax = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('argmax'), Blockly.Variables.NAME_TYPE);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_sort'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_muldiv'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_c = Blockly.JavaScript.valueToCode(block, 'C', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_d = Blockly.JavaScript.valueToCode(block, 'D', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_atan2'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_y = Blockly.JavaScript.valueToCode(block, 'Y', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_x = Blockly.JavaScript.valueToCode(block, 'X', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_sin'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_cos'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_rot2'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_phi = Blockly.JavaScript.valueToCode(block, 'phi', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_sqrt'] = function(block) {
+  var variable_a = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('A'), Blockly.Variables.NAME_TYPE);
+  var value_name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_rand'] = function(block) {
+  var variable_v = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('v'), Blockly.Variables.NAME_TYPE);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['math_dot_easy'] = function(block) {
+  var variable_r = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('r'), Blockly.Variables.NAME_TYPE);
+  var value_name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_name = Blockly.JavaScript.valueToCode(block, 'NAME', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};
+
+Blockly.JavaScript['array_literal'] = function(block) {
+  var text_a = block.getFieldValue('A');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['sensor_arrays'] = function(block) {
+  var dropdown_which = block.getFieldValue('which');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
