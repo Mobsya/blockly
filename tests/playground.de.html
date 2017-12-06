@@ -13,6 +13,10 @@
 <script src="../generators/aesl/loops.js"></script>
 <script src="../generators/aesl/variables.js"></script>
 <script src="../generators/aesl/procedures.js"></script>
+
+<script src="../generators/aesl/thymio-math.js"></script>
+<script src="../generators/aesl/thymio-sdcard.js"></script>
+
 <script src="../msg/js/de.js"></script>
 <script src="../blocks/logic.js"></script>
 <script src="../blocks/loops.js"></script>
@@ -23,6 +27,10 @@
 <script src="../blocks/variables.js"></script>
 <script src="../blocks/procedures.js"></script>
 <script src="../blocks/thymio.js"></script>
+
+<script src="../blocks/thymio-math-blocks.js"></script>
+<script src="../blocks/thymio-sdcard-blocks.js"></script>
+
 <script src="../overrides/blockcolors.js"></script>
 <script>
 'use strict';
@@ -122,6 +130,8 @@ function run()
 		code +
 		'</node>' +
 		'</network>';		
+
+	document.getElementById('importExport').value = aesl;
 	
 	var payload = 'file=' + aesl;
 	
@@ -562,6 +572,452 @@ h1 {
     <sep></sep>
     <category name="Variablen" colour="330" custom="VARIABLE"></category>
     <category name="Subroutinen" colour="290" custom="PROCEDURE"></category>
+
+    <sep></sep>
+
+<category colour="160" name="Libraries">
+    <category name="Math-I">
+  <block type="math_min_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_max_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_clamp_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="D">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_muldiv_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="D">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_sin_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_cos_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_atan2_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="Y">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="X">
+      <shadow type="math_number">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+  </block>
+  <block type="math_sqrt_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_rand_easy">
+    <value name="v">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+  </block>
+    </category>
+
+
+    <category name="Math-II">
+  <block type="thymio_sensor_arrays"></block>
+
+  <block type="array_literal"></block>
+
+
+  <block type="math_stat">
+    <value name="V">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="min">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">min</field>
+      </shadow>
+    </value>
+    <value name="max">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">max</field>
+      </shadow>
+    </value>
+    <value name="mean">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">mean</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_argbounds">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="argmin">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">argmin</field>
+      </shadow>
+    </value>
+    <value name="argmax">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">argmax</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_copy_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">B</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_sort_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_fill_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="s">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_rot2_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">B</field>
+      </shadow>
+    </value>
+    <value name="Winkel">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_addscalar_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">B</field>
+      </shadow>
+    </value>
+    <value name="c">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_add_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">B</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">C</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_sub_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">B</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">C</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_mul_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">B</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">C</field>
+      </shadow>
+    </value>
+  </shadow>
+
+  <shadow type="math_div_easy">
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">B</field>
+      </shadow>
+    </value>
+    <value name="C">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">C</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="math_dot_easy">
+    <value name="r">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">value</field>
+      </shadow>
+    </value>
+    <value name="A">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">A</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">B</field>
+      </shadow>
+    </value>
+  </block>
+    </category>
+
+    
+
+
+    <category name="SDSound">
+
+    <block type="sound_play">
+     <value name="n">
+       <shadow type="math_number">
+         <field name="NUM">0</field>
+       </shadow>
+     </value>
+    </block>
+
+  <block type="sound_record">
+    <value name="n">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+
+ <block type="sound_replay" x="138" y="237">
+    <value name="n">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+  </block>
+      </category>
+    <category name="SDFile">
+
+
+  <block type="sd_open">
+    <value name="file">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="status">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">status</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="sd_read">
+    <value name="data">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">data</field>
+      </shadow>
+    </value>
+    <value name="read">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">status</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="sd_write">
+    <value name="data">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">data</field>
+      </shadow>
+    </value>
+    <value name="written">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">status</field>
+      </shadow>
+    </value>
+  </block>
+
+  <block type="sd_seek">
+    <value name="position">
+      <shadow type="math_number">
+        <field name="NUM">0</field>
+      </shadow>
+    </value>
+    <value name="status">
+      <shadow type="thymio_variable_get">
+        <field name="VAR">status</field>
+      </shadow>
+    </value>
+  </block>
+
+    </category>
+
+
+</category>
+
+  </category>
+
+
   </xml>
 
   <h1>Thymio-Blockly-Spielplatz</h1>
@@ -577,7 +1033,7 @@ h1 {
     &nbsp;
     <input type="button" value="Auf Thymio ausführen" onclick="run()">
     <br><br>
-    <textarea id="importExport" style="width: 26%; height: 12em"></textarea>
+    <textarea id="importExport" style="width: 29%;height:600px"></textarea>
   </p>
   <hr>
 

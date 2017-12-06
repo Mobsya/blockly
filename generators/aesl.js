@@ -143,7 +143,8 @@ Blockly.AESL.finish = function(code)
 	    	var regex = new RegExp("@variable:" + property + '@', "g");
 	    	
 	    	if(property in Blockly.AESL.arrays) {
-	    		output = output.replace(regex, property + '[0]'); // replace direct array variable access to access to first element
+//	    		output = output.replace(regex, property + '[0]'); // replace direct array variable access to access to first element
+	    		output = output.replace(regex, property);
 	    	} else if(!(property in Blockly.AESL.subroutines)) {
 	    		output = output.replace(regex, property); // leave non-array access alone
 	    	}
